@@ -1,0 +1,23 @@
+.game {
+    border: 1px black solid;
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    margin: auto;
+    background-color: rgb(194, 168, 138);
+    font-size: 20px;
+    margin-top: 10rem;
+}
+header {
+    display: grid;	
+	grid-template-columns: 1fr 15%;		
+	grid-template-areas:
+	"message logout";
+}
+header p {
+    margin: 0.5rem;
+    text-align: center;
+    margin-left: 6rem;
+    margin-bottom: 3rem;
+    font-size: larger;
+}

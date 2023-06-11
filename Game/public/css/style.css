@@ -1,0 +1,132 @@
+#page {
+    display: grid;	
+	grid-template-columns: 30% auto 30%;
+	grid-template-rows: 15% 1fr;		
+	grid-template-areas:
+	"newgame header logout"
+	"wordlist main guesslist";
+
+    background-color: rgb(199, 191, 214);
+    border: 1px solid black;
+    padding: 1rem;
+    list-style-type: none;
+    height: 800px;
+}
+.new-game {
+    grid-area: newgame;
+}
+.new-game button, .log-out button {
+    background-color: rgb(34, 9, 105);
+    color: white;
+}
+h1 {
+    grid-area: header;
+    text-align: center;
+}
+.log-out {
+    grid-area: logout;
+    margin-left: auto;
+}
+.word-list {
+    grid-area: wordlist;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(217, 214, 225);
+    margin: 0.5rem;
+    padding: .5rem;
+    height: fit-content;
+}
+.word-list a, .guess-list a {
+    border: black 1px solid;
+    padding: 0 0.2rem;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 0.2rem;
+}
+.word-list div, .guess-list div {
+    min-height: 300px;
+}
+.main {
+    grid-area: main;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+}
+.forms {
+    grid-area: main;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5rem;
+    height: max-content;
+    width: 50%;
+    margin: 0 auto; 
+}
+.main button {
+    background-color: purple;
+    color: yellow;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+form .word {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    width: max-content;
+    margin: 0 auto;
+}
+.score {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5rem;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-size: larger;
+    font-family: cursive;
+}
+.recent-guess {
+    margin: 0 auto;
+}
+.recent-guess li {
+    padding-top: 1rem;
+    font-size: large;
+}
+table {
+    border: 2px solid rgb(34, 9, 105);
+    border-radius: 5px;
+}
+th, td {
+    border: 1px solid rgb(34, 9, 105);
+    border-radius: 5px;
+    padding: .5rem;
+}
+.guess-list {
+    grid-area: guesslist;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(217, 214, 225);
+    margin: 0.5rem;
+    padding: .5rem;
+    height: fit-content;
+}
+button {
+    margin: 0.5rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+    transition: transform .2s;
+}
+button:hover {					
+	background-color: rgb(121, 16, 169);	
+	cursor: pointer;
+    transform: scale(1.1);
+}
+.error-message {
+    grid-area: main;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
