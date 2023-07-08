@@ -6,7 +6,7 @@ This application is a simple calculator app developed using the Visual Studio ap
 - Operations performed: Addition, Subtraction, Multiplication, & Division.
 - Button to clear the inputs for the user to reset the calculator.
 - Result section that displays the results with up to 2 decimal points.
-- Exception handled: Divide by 0, Non-numeric numbers, Empty inputs.
+- Exception handled: Divide by 0, Non-numeric numbers, Empty inputs. and other exceptions.
 - Logic of the application: [Link to the file](https://github.com/rajnij06/Web_Projects/blob/main/BasicCalculator/BasicCalculator/BasicCalculator/Form1.cs) 
 
 #### Screenshot of the application
